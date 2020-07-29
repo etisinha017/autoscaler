@@ -1,0 +1,497 @@
+{
+	"info": {
+		"_postman_id": "fb536d82-47eb-4902-9689-d389637faf61",
+		"name": "EcoEvo_UnitTest_Registration",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Case_001-Success_Akamai",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "b1b378cf-1ca9-4588-ad68-acc94be99695",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "BoomiTest@merckkgaa-VM2Q89",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \r\n   \"Username\":\"rafael.romeo12345@gmail.com\",\r\n   \"PersonalDetail\":{\r\n      \"Salutation\":\"Mr\",\r\n      \"FirstName\":\"RAFAEL\",\r\n      \"LastName\":\"ROMERO REYES\",\r\n\t  \"Gender\" : \"Male\",\r\n      \"Language\":\"Mexican\"\t  \r\n   },\r\n   \"ProfessionalDetail\":{\r\n      \"isHCP\":true,\r\n      \"Specialization(Role)\":\"Fertility\",\r\n      \"ProfessionalRegistrationNumber\":\"123456\",\r\n      \"ProfessionType\":\"A\",\r\n      \"DepartmentName\":\"FERTILITY DEPT\",\r\n      \"ProfessionalRole\":\"IVF Expert\",\r\n      \"Address\":{\r\n         \"AddressLine1\":\"Simon Smitweg 16\",\r\n         \"AddressLine2\":\"\",\r\n         \"City\":\"Essen\",\r\n         \"PostalCode\":\"2353\",\r\n         \"State\":\"North Rhine-Westphalia\",\r\n         \"Country\":\"Mexico\",\r\n         \"Phone\":\"+49 123475950\",\r\n         \"Mobile\":\"+49 123475951\",\r\n\t\t \"EmailID\" : \"\"\r\n      }\r\n   },\r\n   \"Consents\":[\r\n      {\r\n         \"Id\":\"123\",\r\n         \"Channel\":\"Email\",\r\n         \"Description\":\"abc\",\r\n         \"Consent\":true,\r\n         \"ChannelValue\":\"abc@gmail.com\",\r\n         \"ConsentStatus\":\"Pending\"\r\n      },\r\n      {\r\n         \"Id\":\"1234\",\r\n         \"Channel\":\"agreement\",\r\n         \"Description\":\"abc\",\r\n         \"Consent\":true,\r\n         \"ChannelValue\":\"+49 123475951\",\r\n         \"ConsentStatus\":\"Pending\"\r\n      }\r\n   ],\r\n   \"TherapeuticArea\":[\r\n      {\r\n         \"Name\":\"\",\r\n         \"WebsiteId\":\"\",\r\n         \"Locale\":\"\",\r\n         \"CountryCode\":\"\",\r\n         \"isPrimary\":\"\"\r\n      },\r\n      {\r\n         \"Name\":\"\",\r\n         \"WebsiteId\":\"\",\r\n         \"Locale\":\"\",\r\n         \"CountryCode\":\"\",\r\n         \"isPrimary\":\"\"\r\n      }\r\n   ],\r\n   \"Preferences\":[\r\n      {\r\n         \"Tag\":\"\",\r\n         \"TagId\":\"\",\r\n         \"WebsiteId\":\"\"\r\n      },\r\n      {\r\n         \"Tag\":\"\",\r\n         \"TagId\":\"\",\r\n         \"WebsiteId\":\"\"\r\n      }\r\n   ],\r\n   \r\n    \"Website\": {\r\n       \"Id\": \"123\",\r\n\t   \"Language\": \"Mexican\",\r\n\t   \"Country\":\"Mexico\"\r\n\t}\r\n  \r\n}"
+				},
+				"url": {
+					"raw": "https://boomidev.merckgroup.com/ws/rest/ecoevo/v1/akamairegistration/",
+					"protocol": "https",
+					"host": [
+						"boomidev",
+						"merckgroup",
+						"com"
+					],
+					"path": [
+						"ws",
+						"rest",
+						"ecoevo",
+						"v1",
+						"akamairegistration",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Case_002-Success_AtomQueue",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "b1b378cf-1ca9-4588-ad68-acc94be99695",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "BoomiTest@merckkgaa-VM2Q89",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \r\n   \"Username\":\"rafael.romeo1235@gmail.com\",\r\n   \"PersonalDetail\":{\r\n      \"Salutation\":\"Mr\",\r\n      \"FirstName\":\"RAFAEL\",\r\n      \"LastName\":\"ROMERO REYES\",\r\n\t  \"Gender\" : \"Male\",\r\n      \"Language\":\"Mexican\"\t  \r\n   },\r\n   \"ProfessionalDetail\":{\r\n      \"isHCP\":true,\r\n      \"Specialization(Role)\":\"Fertility\",\r\n      \"ProfessionalRegistrationNumber\":\"123456\",\r\n      \"ProfessionType\":\"A\",\r\n      \"DepartmentName\":\"FERTILITY DEPT\",\r\n      \"ProfessionalRole\":\"IVF Expert\",\r\n      \"Address\":{\r\n         \"AddressLine1\":\"Simon Smitweg 16\",\r\n         \"AddressLine2\":\"\",\r\n         \"City\":\"Essen\",\r\n         \"PostalCode\":\"2353\",\r\n         \"State\":\"North Rhine-Westphalia\",\r\n         \"Country\":\"Mexico\",\r\n         \"Phone\":\"+49 123475950\",\r\n         \"Mobile\":\"+49 123475951\",\r\n\t\t \"EmailID\" : \"\"\r\n      }\r\n   },\r\n   \"Consents\":[\r\n      {\r\n         \"Id\":\"123\",\r\n         \"Channel\":\"Email\",\r\n         \"Description\":\"abc\",\r\n         \"Consent\":true,\r\n         \"ChannelValue\":\"abc@gmail.com\",\r\n         \"ConsentStatus\":\"Pending\"\r\n      },\r\n      {\r\n         \"Id\":\"1234\",\r\n         \"Channel\":\"agreement\",\r\n         \"Description\":\"abc\",\r\n         \"Consent\":true,\r\n         \"ChannelValue\":\"+49 123475951\",\r\n         \"ConsentStatus\":\"Pending\"\r\n      }\r\n   ],\r\n   \"TherapeuticArea\":[\r\n      {\r\n         \"Name\":\"\",\r\n         \"WebsiteId\":\"\",\r\n         \"Locale\":\"\",\r\n         \"CountryCode\":\"\",\r\n         \"isPrimary\":\"\"\r\n      },\r\n      {\r\n         \"Name\":\"\",\r\n         \"WebsiteId\":\"\",\r\n         \"Locale\":\"\",\r\n         \"CountryCode\":\"\",\r\n         \"isPrimary\":\"\"\r\n      }\r\n   ],\r\n   \"Preferences\":[\r\n      {\r\n         \"Tag\":\"\",\r\n         \"TagId\":\"\",\r\n         \"WebsiteId\":\"\"\r\n      },\r\n      {\r\n         \"Tag\":\"\",\r\n         \"TagId\":\"\",\r\n         \"WebsiteId\":\"\"\r\n      }\r\n   ],\r\n   \r\n    \"Website\": {\r\n       \"Id\": \"123\",\r\n\t   \"Language\": \"Mexican\",\r\n\t   \"Country\":\"Mexico\"\r\n\t}\r\n  \r\n}"
+				},
+				"url": {
+					"raw": "https://boomidev.merckgroup.com/ws/rest/ecoevo/v1/akamairegistration/",
+					"protocol": "https",
+					"host": [
+						"boomidev",
+						"merckgroup",
+						"com"
+					],
+					"path": [
+						"ws",
+						"rest",
+						"ecoevo",
+						"v1",
+						"akamairegistration",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Case_003-Success_EmailServiceInvocation",
+			"protocolProfileBehavior": {
+				"strictSSL": false
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "b1b378cf-1ca9-4588-ad68-acc94be99695",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "BoomiTest@merckkgaa-VM2Q89",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \r\n   \"Username\":\"rafael.romeo456@gmail.com\",\r\n   \"PersonalDetail\":{\r\n      \"Salutation\":\"Mr\",\r\n      \"FirstName\":\"RAFAEL\",\r\n      \"LastName\":\"ROMERO REYES\",\r\n\t  \"Gender\" : \"Male\",\r\n      \"Language\":\"Mexican\"\t  \r\n   },\r\n   \"ProfessionalDetail\":{\r\n      \"isHCP\":true,\r\n      \"Specialization(Role)\":\"Fertility\",\r\n      \"ProfessionalRegistrationNumber\":\"123456\",\r\n      \"ProfessionType\":\"A\",\r\n      \"DepartmentName\":\"FERTILITY DEPT\",\r\n      \"ProfessionalRole\":\"IVF Expert\",\r\n      \"Address\":{\r\n         \"AddressLine1\":\"Simon Smitweg 16\",\r\n         \"AddressLine2\":\"\",\r\n         \"City\":\"Essen\",\r\n         \"PostalCode\":\"2353\",\r\n         \"State\":\"North Rhine-Westphalia\",\r\n         \"Country\":\"Mexico\",\r\n         \"Phone\":\"+49 123475950\",\r\n         \"Mobile\":\"+49 123475951\",\r\n\t\t \"EmailID\" : \"\"\r\n      }\r\n   },\r\n   \"Consents\":[\r\n      {\r\n         \"Id\":\"123\",\r\n         \"Channel\":\"Email\",\r\n         \"Description\":\"abc\",\r\n         \"Consent\":true,\r\n         \"ChannelValue\":\"abc@gmail.com\",\r\n         \"ConsentStatus\":\"Pending\"\r\n      },\r\n      {\r\n         \"Id\":\"1234\",\r\n         \"Channel\":\"agreement\",\r\n         \"Description\":\"abc\",\r\n         \"Consent\":true,\r\n         \"ChannelValue\":\"+49 123475951\",\r\n         \"ConsentStatus\":\"Pending\"\r\n      }\r\n   ],\r\n   \"TherapeuticArea\":[\r\n      {\r\n         \"Name\":\"\",\r\n         \"WebsiteId\":\"\",\r\n         \"Locale\":\"\",\r\n         \"CountryCode\":\"\",\r\n         \"isPrimary\":\"\"\r\n      },\r\n      {\r\n         \"Name\":\"\",\r\n         \"WebsiteId\":\"\",\r\n         \"Locale\":\"\",\r\n         \"CountryCode\":\"\",\r\n         \"isPrimary\":\"\"\r\n      }\r\n   ],\r\n   \"Preferences\":[\r\n      {\r\n         \"Tag\":\"\",\r\n         \"TagId\":\"\",\r\n         \"WebsiteId\":\"\"\r\n      },\r\n      {\r\n         \"Tag\":\"\",\r\n         \"TagId\":\"\",\r\n         \"WebsiteId\":\"\"\r\n      }\r\n   ],\r\n   \r\n    \"Website\": {\r\n       \"Id\": \"123\",\r\n\t   \"Language\": \"Mexican\",\r\n\t   \"Country\":\"Mexico\"\r\n\t}\r\n  \r\n}"
+				},
+				"url": {
+					"raw": "https://boomidev.merckgroup.com/ws/rest/ecoevo/v1/akamairegistration/",
+					"protocol": "https",
+					"host": [
+						"boomidev",
+						"merckgroup",
+						"com"
+					],
+					"path": [
+						"ws",
+						"rest",
+						"ecoevo",
+						"v1",
+						"akamairegistration",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Case_004-InvalidJSON",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "b1b378cf-1ca9-4588-ad68-acc94be99695",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "BoomiTest@merckkgaa-VM2Q89",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \r\n   \"Username\":\"rafael.romeo456@gmail.com\",\r\n   \"PersonalDetail\":{\r\n      \"Salutation\":\"Mr\",\r\n      \"FirstName\":\"RAFAEL\",\r\n      \"LastName\":\"ROMERO REYES\",\r\n\t  \"Gender\" : \"Male\"\r\n      \"Language\":\"Mexican\"\t  \r\n   },\r\n   \"ProfessionalDetail\":{\r\n      \"isHCP\":true,\r\n      \"Specialization(Role)\":\"Fertility\",\r\n      \"ProfessionalRegistrationNumber\":\"123456\",\r\n      \"ProfessionType\":\"A\",\r\n      \"DepartmentName\":\"FERTILITY DEPT\",\r\n      \"ProfessionalRole\":\"IVF Expert\",\r\n      \"Address\":{\r\n         \"AddressLine1\":\"Simon Smitweg 16\",\r\n         \"AddressLine2\":\"\",\r\n         \"City\":\"Essen\",\r\n         \"PostalCode\":\"2353\",\r\n         \"State\":\"North Rhine-Westphalia\",\r\n         \"Country\":\"Mexico\",\r\n         \"Phone\":\"+49 123475950\",\r\n         \"Mobile\":\"+49 123475951\",\r\n\t\t \"EmailID\" : \"\"\r\n      }\r\n   },\r\n   \"Consents\":[\r\n      {\r\n         \"Id\":\"123\",\r\n         \"Channel\":\"Email\",\r\n         \"Description\":\"abc\",\r\n         \"Consent\":true,\r\n         \"ChannelValue\":\"abc@gmail.com\",\r\n         \"ConsentStatus\":\"Pending\"\r\n      },\r\n      {\r\n         \"Id\":\"1234\",\r\n         \"Channel\":\"agreement\",\r\n         \"Description\":\"abc\",\r\n         \"Consent\":true,\r\n         \"ChannelValue\":\"+49 123475951\",\r\n         \"ConsentStatus\":\"Pending\"\r\n      }\r\n   ],\r\n   \"TherapeuticArea\":[\r\n      {\r\n         \"Name\":\"\",\r\n         \"WebsiteId\":\"\",\r\n         \"Locale\":\"\",\r\n         \"CountryCode\":\"\",\r\n         \"isPrimary\":\"\"\r\n      },\r\n      {\r\n         \"Name\":\"\",\r\n         \"WebsiteId\":\"\",\r\n         \"Locale\":\"\",\r\n         \"CountryCode\":\"\",\r\n         \"isPrimary\":\"\"\r\n      }\r\n   ],\r\n   \"Preferences\":[\r\n      {\r\n         \"Tag\":\"\",\r\n         \"TagId\":\"\",\r\n         \"WebsiteId\":\"\"\r\n      },\r\n      {\r\n         \"Tag\":\"\",\r\n         \"TagId\":\"\",\r\n         \"WebsiteId\":\"\"\r\n      }\r\n   ],\r\n   \r\n    \"Website\": {\r\n       \"Id\": \"123\",\r\n\t   \"Language\": \"Mexican\",\r\n\t   \"Country\":\"Mexico\"\r\n\t}\r\n  \r\n}"
+				},
+				"url": {
+					"raw": "https://boomidev.merckgroup.com/ws/rest/ecoevo/v1/akamairegistration/",
+					"protocol": "https",
+					"host": [
+						"boomidev",
+						"merckgroup",
+						"com"
+					],
+					"path": [
+						"ws",
+						"rest",
+						"ecoevo",
+						"v1",
+						"akamairegistration",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Case_005-ConsentMandatoryCheck",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "b1b378cf-1ca9-4588-ad68-acc94be99695",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "BoomiTest@merckkgaa-VM2Q89",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \r\n   \"Username\":\"rafael.romeo456@gmail.com\",\r\n   \"PersonalDetail\":{\r\n      \"Salutation\":\"Mr\",\r\n      \"FirstName\":\"RAFAEL\",\r\n      \"LastName\":\"ROMERO REYES\",\r\n\t  \"Gender\" : \"Male\",\r\n      \"Language\":\"Mexican\"\t  \r\n   },\r\n   \"ProfessionalDetail\":{\r\n      \"isHCP\":true,\r\n      \"Specialization(Role)\":\"Fertility\",\r\n      \"ProfessionalRegistrationNumber\":\"123456\",\r\n      \"ProfessionType\":\"A\",\r\n      \"DepartmentName\":\"FERTILITY DEPT\",\r\n      \"ProfessionalRole\":\"IVF Expert\",\r\n      \"Address\":{\r\n         \"AddressLine1\":\"Simon Smitweg 16\",\r\n         \"AddressLine2\":\"\",\r\n         \"City\":\"Essen\",\r\n         \"PostalCode\":\"2353\",\r\n         \"State\":\"North Rhine-Westphalia\",\r\n         \"Country\":\"Mexico\",\r\n         \"Phone\":\"+49 123475950\",\r\n         \"Mobile\":\"+49 123475951\",\r\n\t\t \"EmailID\" : \"\"\r\n      }\r\n   },\r\n      \"TherapeuticArea\":[\r\n      {\r\n         \"Name\":\"\",\r\n         \"WebsiteId\":\"\",\r\n         \"Locale\":\"\",\r\n         \"CountryCode\":\"\",\r\n         \"isPrimary\":\"\"\r\n      },\r\n      {\r\n         \"Name\":\"\",\r\n         \"WebsiteId\":\"\",\r\n         \"Locale\":\"\",\r\n         \"CountryCode\":\"\",\r\n         \"isPrimary\":\"\"\r\n      }\r\n   ],\r\n   \"Preferences\":[\r\n      {\r\n         \"Tag\":\"\",\r\n         \"TagId\":\"\",\r\n         \"WebsiteId\":\"\"\r\n      },\r\n      {\r\n         \"Tag\":\"\",\r\n         \"TagId\":\"\",\r\n         \"WebsiteId\":\"\"\r\n      }\r\n   ],\r\n   \r\n    \"Website\": {\r\n       \"Id\": \"123\",\r\n\t   \"Language\": \"Mexican\",\r\n\t   \"Country\":\"Mexico\"\r\n\t}\r\n  \r\n}"
+				},
+				"url": {
+					"raw": "https://boomidev.merckgroup.com/ws/rest/ecoevo/v1/akamairegistration/",
+					"protocol": "https",
+					"host": [
+						"boomidev",
+						"merckgroup",
+						"com"
+					],
+					"path": [
+						"ws",
+						"rest",
+						"ecoevo",
+						"v1",
+						"akamairegistration",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Case_006-CountryCheck",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "b1b378cf-1ca9-4588-ad68-acc94be99695",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "BoomiTest@merckkgaa-VM2Q89",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \r\n   \"Username\":\"rafael.romeo1234@gmail.com\",\r\n   \"PersonalDetail\":{\r\n      \"Salutation\":\"Mr\",\r\n      \"FirstName\":\"RAFAEL\",\r\n      \"LastName\":\"ROMERO REYES\",\r\n\t  \"Gender\" : \"Male\",\r\n      \"Language\":\"English\"\t  \r\n   },\r\n   \"ProfessionalDetail\":{\r\n      \"isHCP\":true,\r\n      \"Specialization(Role)\":\"Fertility\",\r\n      \"ProfessionalRegistrationNumber\":\"123456\",\r\n      \"ProfessionType\":\"A\",\r\n      \"DepartmentName\":\"FERTILITY DEPT\",\r\n      \"ProfessionalRole\":\"IVF Expert\",\r\n      \"Address\":{\r\n         \"AddressLine1\":\"Simon Smitweg 16\",\r\n         \"AddressLine2\":\"\",\r\n         \"City\":\"Essen\",\r\n         \"PostalCode\":\"2353\",\r\n         \"State\":\"North Rhine-Westphalia\",\r\n         \"Country\":\"Mexico\",\r\n         \"Phone\":\"+49 123475950\",\r\n         \"Mobile\":\"+49 123475951\",\r\n\t\t \"EmailID\" : \"\"\r\n      }\r\n   },\r\n   \"Consents\":[\r\n      {\r\n         \"Id\":\"123\",\r\n         \"Channel\":\"Email\",\r\n         \"Description\":\"abc\",\r\n         \"Consent\":true,\r\n         \"ChannelValue\":\"abc@gmail.com\",\r\n         \"ConsentStatus\":\"Pending\"\r\n      },\r\n      {\r\n         \"Id\":\"1234\",\r\n         \"Channel\":\"agreement\",\r\n         \"Description\":\"abc\",\r\n         \"Consent\":true,\r\n         \"ChannelValue\":\"+49 123475951\",\r\n         \"ConsentStatus\":\"Pending\"\r\n      }\r\n   ],\r\n   \"TherapeuticArea\":[\r\n      {\r\n         \"Name\":\"\",\r\n         \"WebsiteId\":\"\",\r\n         \"Locale\":\"\",\r\n         \"CountryCode\":\"\",\r\n         \"isPrimary\":\"\"\r\n      },\r\n      {\r\n         \"Name\":\"\",\r\n         \"WebsiteId\":\"\",\r\n         \"Locale\":\"\",\r\n         \"CountryCode\":\"\",\r\n         \"isPrimary\":\"\"\r\n      }\r\n   ],\r\n   \"Preferences\":[\r\n      {\r\n         \"Tag\":\"\",\r\n         \"TagId\":\"\",\r\n         \"WebsiteId\":\"\"\r\n      },\r\n      {\r\n         \"Tag\":\"\",\r\n         \"TagId\":\"\",\r\n         \"WebsiteId\":\"\"\r\n      }\r\n   ],\r\n   \r\n    \"Website\": {\r\n       \"Id\": \"123\",\r\n\t   \"Language\": \"English\",\r\n\t   \"Country\":\"United States\"\r\n\t}\r\n  \r\n}"
+				},
+				"url": {
+					"raw": "https://boomidev.merckgroup.com/ws/rest/ecoevo/v1/akamairegistration/",
+					"protocol": "https",
+					"host": [
+						"boomidev",
+						"merckgroup",
+						"com"
+					],
+					"path": [
+						"ws",
+						"rest",
+						"ecoevo",
+						"v1",
+						"akamairegistration",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Case_007-MandatoryFieldAkamai",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "b1b378cf-1ca9-4588-ad68-acc94be99695",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "BoomiTest@merckkgaa-VM2Q89",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \r\n   \"Username\":\"rafael.romeo1234@gmail.com\",\r\n   \"PersonalDetail\":{\r\n      \"Salutation\":\"Mr\",\r\n      \"FirstName\":\"RAFAEL\",\r\n      \"LastName\":\"ROMERO REYES\",\r\n\t  \"Gender\" : \"Male\",\r\n      \"Language\":\"Mexican\"\t  \r\n   },\r\n   \"ProfessionalDetail\":{\r\n      \"isHCP\":true,\r\n      \"Specialization(Role)\":\"Fertility\",\r\n      \"ProfessionalRegistrationNumber\":\"123456\",\r\n      \"ProfessionType\":\"A\",\r\n      \"DepartmentName\":\"FERTILITY DEPT\",\r\n      \"ProfessionalRole\":\"IVF Expert\",\r\n      \"Address\":{\r\n         \"AddressLine1\":\"Simon Smitweg 16\",\r\n         \"AddressLine2\":\"\",\r\n         \"City\":\"Essen\",\r\n         \"PostalCode\":\"2353\",\r\n         \"State\":\"North Rhine-Westphalia\",\r\n         \"Country\":\"Mexico\",\r\n         \"Phone\":\"+49 123475950\",\r\n         \"Mobile\":\"+49 123475951\",\r\n\t\t \"EmailID\" : \"\"\r\n      }\r\n   },\r\n   \"Consents\":[\r\n      {\r\n         \"Id\":\"123\",\r\n         \"Channel\":\"Email\",\r\n         \"Description\":\"abc\",\r\n         \"Consent\":true,\r\n         \"ChannelValue\":\"abc@gmail.com\",\r\n         \"ConsentStatus\":\"Pending\"\r\n      },\r\n      {\r\n         \"Id\":\"1234\",\r\n         \"Channel\":\"agreement\",\r\n         \"Description\":\"abc\",\r\n         \"Consent\":true,\r\n         \"ChannelValue\":\"+49 123475951\",\r\n         \"ConsentStatus\":\"Pending\"\r\n      }\r\n   ],\r\n   \"TherapeuticArea\":[\r\n      {\r\n         \"Name\":\"\",\r\n         \"WebsiteId\":\"\",\r\n         \"Locale\":\"\",\r\n         \"CountryCode\":\"\",\r\n         \"isPrimary\":\"\"\r\n      },\r\n      {\r\n         \"Name\":\"\",\r\n         \"WebsiteId\":\"\",\r\n         \"Locale\":\"\",\r\n         \"CountryCode\":\"\",\r\n         \"isPrimary\":\"\"\r\n      }\r\n   ],\r\n   \"Preferences\":[\r\n      {\r\n         \"Tag\":\"\",\r\n         \"TagId\":\"\",\r\n         \"WebsiteId\":\"\"\r\n      },\r\n      {\r\n         \"Tag\":\"\",\r\n         \"TagId\":\"\",\r\n         \"WebsiteId\":\"\"\r\n      }\r\n   ],\r\n   \r\n    \"Website\": {\r\n       \"Id\": \"123\",\r\n\t   \"Language\": \"Mexican\",\r\n\t   \"Country\":\"Mexico\"\r\n\t}\r\n  \r\n}"
+				},
+				"url": {
+					"raw": "https://boomidev.merckgroup.com/ws/rest/ecoevo/v1/akamairegistration/",
+					"protocol": "https",
+					"host": [
+						"boomidev",
+						"merckgroup",
+						"com"
+					],
+					"path": [
+						"ws",
+						"rest",
+						"ecoevo",
+						"v1",
+						"akamairegistration",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Case_008-EmailUniqueViolation",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "b1b378cf-1ca9-4588-ad68-acc94be99695",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "BoomiTest@merckkgaa-VM2Q89",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \r\n   \"Username\":\"rafael.romeo1234@gmail.com\",\r\n   \"PersonalDetail\":{\r\n      \"Salutation\":\"Mr\",\r\n      \"FirstName\":\"RAFAEL\",\r\n      \"LastName\":\"ROMERO REYES\",\r\n\t  \"Gender\" : \"Male\",\r\n      \"Language\":\"Mexican\"\t  \r\n   },\r\n   \"ProfessionalDetail\":{\r\n      \"isHCP\":true,\r\n      \"Specialization(Role)\":\"Fertility\",\r\n      \"ProfessionalRegistrationNumber\":\"123456\",\r\n      \"ProfessionType\":\"A\",\r\n      \"DepartmentName\":\"FERTILITY DEPT\",\r\n      \"ProfessionalRole\":\"IVF Expert\",\r\n      \"Address\":{\r\n         \"AddressLine1\":\"Simon Smitweg 16\",\r\n         \"AddressLine2\":\"\",\r\n         \"City\":\"Essen\",\r\n         \"PostalCode\":\"2353\",\r\n         \"State\":\"North Rhine-Westphalia\",\r\n         \"Country\":\"Mexico\",\r\n         \"Phone\":\"+49 123475950\",\r\n         \"Mobile\":\"+49 123475951\",\r\n\t\t \"EmailID\" : \"\"\r\n      }\r\n   },\r\n   \"Consents\":[\r\n      {\r\n         \"Id\":\"123\",\r\n         \"Channel\":\"Email\",\r\n         \"Description\":\"abc\",\r\n         \"Consent\":true,\r\n         \"ChannelValue\":\"abc@gmail.com\",\r\n         \"ConsentStatus\":\"Pending\"\r\n      },\r\n      {\r\n         \"Id\":\"1234\",\r\n         \"Channel\":\"agreement\",\r\n         \"Description\":\"abc\",\r\n         \"Consent\":true,\r\n         \"ChannelValue\":\"+49 123475951\",\r\n         \"ConsentStatus\":\"Pending\"\r\n      }\r\n   ],\r\n   \"TherapeuticArea\":[\r\n      {\r\n         \"Name\":\"\",\r\n         \"WebsiteId\":\"\",\r\n         \"Locale\":\"\",\r\n         \"CountryCode\":\"\",\r\n         \"isPrimary\":\"\"\r\n      },\r\n      {\r\n         \"Name\":\"\",\r\n         \"WebsiteId\":\"\",\r\n         \"Locale\":\"\",\r\n         \"CountryCode\":\"\",\r\n         \"isPrimary\":\"\"\r\n      }\r\n   ],\r\n   \"Preferences\":[\r\n      {\r\n         \"Tag\":\"\",\r\n         \"TagId\":\"\",\r\n         \"WebsiteId\":\"\"\r\n      },\r\n      {\r\n         \"Tag\":\"\",\r\n         \"TagId\":\"\",\r\n         \"WebsiteId\":\"\"\r\n      }\r\n   ],\r\n   \r\n    \"Website\": {\r\n       \"Id\": \"123\",\r\n\t   \"Language\": \"Mexican\",\r\n\t   \"Country\":\"Mexico\"\r\n\t}\r\n  \r\n}"
+				},
+				"url": {
+					"raw": "https://boomidev.merckgroup.com/ws/rest/ecoevo/v1/akamairegistration/",
+					"protocol": "https",
+					"host": [
+						"boomidev",
+						"merckgroup",
+						"com"
+					],
+					"path": [
+						"ws",
+						"rest",
+						"ecoevo",
+						"v1",
+						"akamairegistration",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Case_009-AkamaiConnectionFailure",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "b1b378cf-1ca9-4588-ad68-acc94be99695",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "BoomiTest@merckkgaa-VM2Q89",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \r\n   \"Username\":\"rafael.romeo1234@gmail.com\",\r\n   \"PersonalDetail\":{\r\n      \"Salutation\":\"Mr\",\r\n      \"FirstName\":\"RAFAEL\",\r\n      \"LastName\":\"ROMERO REYES\",\r\n\t  \"Gender\" : \"Male\",\r\n      \"Language\":\"Mexican\"\t  \r\n   },\r\n   \"ProfessionalDetail\":{\r\n      \"isHCP\":true,\r\n      \"Specialization(Role)\":\"Fertility\",\r\n      \"ProfessionalRegistrationNumber\":\"123456\",\r\n      \"ProfessionType\":\"A\",\r\n      \"DepartmentName\":\"FERTILITY DEPT\",\r\n      \"ProfessionalRole\":\"IVF Expert\",\r\n      \"Address\":{\r\n         \"AddressLine1\":\"Simon Smitweg 16\",\r\n         \"AddressLine2\":\"\",\r\n         \"City\":\"Essen\",\r\n         \"PostalCode\":\"2353\",\r\n         \"State\":\"North Rhine-Westphalia\",\r\n         \"Country\":\"Mexico\",\r\n         \"Phone\":\"+49 123475950\",\r\n         \"Mobile\":\"+49 123475951\",\r\n\t\t \"EmailID\" : \"\"\r\n      }\r\n   },\r\n   \"Consents\":[\r\n      {\r\n         \"Id\":\"123\",\r\n         \"Channel\":\"Email\",\r\n         \"Description\":\"abc\",\r\n         \"Consent\":true,\r\n         \"ChannelValue\":\"abc@gmail.com\",\r\n         \"ConsentStatus\":\"Pending\"\r\n      },\r\n      {\r\n         \"Id\":\"1234\",\r\n         \"Channel\":\"agreement\",\r\n         \"Description\":\"abc\",\r\n         \"Consent\":true,\r\n         \"ChannelValue\":\"+49 123475951\",\r\n         \"ConsentStatus\":\"Pending\"\r\n      }\r\n   ],\r\n   \"TherapeuticArea\":[\r\n      {\r\n         \"Name\":\"\",\r\n         \"WebsiteId\":\"\",\r\n         \"Locale\":\"\",\r\n         \"CountryCode\":\"\",\r\n         \"isPrimary\":\"\"\r\n      },\r\n      {\r\n         \"Name\":\"\",\r\n         \"WebsiteId\":\"\",\r\n         \"Locale\":\"\",\r\n         \"CountryCode\":\"\",\r\n         \"isPrimary\":\"\"\r\n      }\r\n   ],\r\n   \"Preferences\":[\r\n      {\r\n         \"Tag\":\"\",\r\n         \"TagId\":\"\",\r\n         \"WebsiteId\":\"\"\r\n      },\r\n      {\r\n         \"Tag\":\"\",\r\n         \"TagId\":\"\",\r\n         \"WebsiteId\":\"\"\r\n      }\r\n   ],\r\n   \r\n    \"Website\": {\r\n       \"Id\": \"123\",\r\n\t   \"Language\": \"Mexican\",\r\n\t   \"Country\":\"Mexico\"\r\n\t}\r\n  \r\n}"
+				},
+				"url": {
+					"raw": "https://boomidev.merckgroup.com/ws/rest/ecoevo/v1/akamairegistration/",
+					"protocol": "https",
+					"host": [
+						"boomidev",
+						"merckgroup",
+						"com"
+					],
+					"path": [
+						"ws",
+						"rest",
+						"ecoevo",
+						"v1",
+						"akamairegistration",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Case_010-AtomQueueConnIssue",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "b1b378cf-1ca9-4588-ad68-acc94be99695",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "BoomiTest@merckkgaa-VM2Q89",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \r\n   \"Username\":\"rafael.romeo789@gmail.com\",\r\n   \"PersonalDetail\":{\r\n      \"Salutation\":\"Mr\",\r\n      \"FirstName\":\"RAFAEL\",\r\n      \"LastName\":\"ROMERO REYES\",\r\n\t  \"Gender\" : \"Male\",\r\n      \"Language\":\"Mexican\"\t  \r\n   },\r\n   \"ProfessionalDetail\":{\r\n      \"isHCP\":true,\r\n      \"Specialization(Role)\":\"Fertility\",\r\n      \"ProfessionalRegistrationNumber\":\"123456\",\r\n      \"ProfessionType\":\"A\",\r\n      \"DepartmentName\":\"FERTILITY DEPT\",\r\n      \"ProfessionalRole\":\"IVF Expert\",\r\n      \"Address\":{\r\n         \"AddressLine1\":\"Simon Smitweg 16\",\r\n         \"AddressLine2\":\"\",\r\n         \"City\":\"Essen\",\r\n         \"PostalCode\":\"2353\",\r\n         \"State\":\"North Rhine-Westphalia\",\r\n         \"Country\":\"Mexico\",\r\n         \"Phone\":\"+49 123475950\",\r\n         \"Mobile\":\"+49 123475951\",\r\n\t\t \"EmailID\" : \"\"\r\n      }\r\n   },\r\n   \"Consents\":[\r\n      {\r\n         \"Id\":\"123\",\r\n         \"Channel\":\"Email\",\r\n         \"Description\":\"abc\",\r\n         \"Consent\":true,\r\n         \"ChannelValue\":\"abc@gmail.com\",\r\n         \"ConsentStatus\":\"Pending\"\r\n      },\r\n      {\r\n         \"Id\":\"1234\",\r\n         \"Channel\":\"agreement\",\r\n         \"Description\":\"abc\",\r\n         \"Consent\":true,\r\n         \"ChannelValue\":\"+49 123475951\",\r\n         \"ConsentStatus\":\"Pending\"\r\n      }\r\n   ],\r\n   \"TherapeuticArea\":[\r\n      {\r\n         \"Name\":\"\",\r\n         \"WebsiteId\":\"\",\r\n         \"Locale\":\"\",\r\n         \"CountryCode\":\"\",\r\n         \"isPrimary\":\"\"\r\n      },\r\n      {\r\n         \"Name\":\"\",\r\n         \"WebsiteId\":\"\",\r\n         \"Locale\":\"\",\r\n         \"CountryCode\":\"\",\r\n         \"isPrimary\":\"\"\r\n      }\r\n   ],\r\n   \"Preferences\":[\r\n      {\r\n         \"Tag\":\"\",\r\n         \"TagId\":\"\",\r\n         \"WebsiteId\":\"\"\r\n      },\r\n      {\r\n         \"Tag\":\"\",\r\n         \"TagId\":\"\",\r\n         \"WebsiteId\":\"\"\r\n      }\r\n   ],\r\n   \r\n    \"Website\": {\r\n       \"Id\": \"123\",\r\n\t   \"Language\": \"Mexican\",\r\n\t   \"Country\":\"Mexico\"\r\n\t}\r\n  \r\n}"
+				},
+				"url": {
+					"raw": "https://boomidev.merckgroup.com/ws/rest/ecoevo/v1/akamairegistration/",
+					"protocol": "https",
+					"host": [
+						"boomidev",
+						"merckgroup",
+						"com"
+					],
+					"path": [
+						"ws",
+						"rest",
+						"ecoevo",
+						"v1",
+						"akamairegistration",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Case_011-SuccessInvocationErrorLog_ErrorEmailServices",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "b1b378cf-1ca9-4588-ad68-acc94be99695",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "BoomiTest@merckkgaa-VM2Q89",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \r\n   \"Username\":\"rafael.romeo1234@gmail.com\",\r\n   \"PersonalDetail\":{\r\n      \"Salutation\":\"Mr\",\r\n      \"FirstName\":\"RAFAEL\",\r\n      \"LastName\":\"ROMERO REYES\",\r\n\t  \"Gender\" : \"Male\",\r\n      \"Language\":\"Mexican\"\t  \r\n   },\r\n   \"ProfessionalDetail\":{\r\n      \"isHCP\":true,\r\n      \"Specialization(Role)\":\"Fertility\",\r\n      \"ProfessionalRegistrationNumber\":\"123456\",\r\n      \"ProfessionType\":\"A\",\r\n      \"DepartmentName\":\"FERTILITY DEPT\",\r\n      \"ProfessionalRole\":\"IVF Expert\",\r\n      \"Address\":{\r\n         \"AddressLine1\":\"Simon Smitweg 16\",\r\n         \"AddressLine2\":\"\",\r\n         \"City\":\"Essen\",\r\n         \"PostalCode\":\"2353\",\r\n         \"State\":\"North Rhine-Westphalia\",\r\n         \"Country\":\"Mexico\",\r\n         \"Phone\":\"+49 123475950\",\r\n         \"Mobile\":\"+49 123475951\",\r\n\t\t \"EmailID\" : \"\"\r\n      }\r\n   },\r\n   \"Consents\":[\r\n      {\r\n         \"Id\":\"123\",\r\n         \"Channel\":\"Email\",\r\n         \"Description\":\"abc\",\r\n         \"Consent\":true,\r\n         \"ChannelValue\":\"abc@gmail.com\",\r\n         \"ConsentStatus\":\"Pending\"\r\n      },\r\n      {\r\n         \"Id\":\"1234\",\r\n         \"Channel\":\"agreement\",\r\n         \"Description\":\"abc\",\r\n         \"Consent\":true,\r\n         \"ChannelValue\":\"+49 123475951\",\r\n         \"ConsentStatus\":\"Pending\"\r\n      }\r\n   ],\r\n   \"TherapeuticArea\":[\r\n      {\r\n         \"Name\":\"\",\r\n         \"WebsiteId\":\"\",\r\n         \"Locale\":\"\",\r\n         \"CountryCode\":\"\",\r\n         \"isPrimary\":\"\"\r\n      },\r\n      {\r\n         \"Name\":\"\",\r\n         \"WebsiteId\":\"\",\r\n         \"Locale\":\"\",\r\n         \"CountryCode\":\"\",\r\n         \"isPrimary\":\"\"\r\n      }\r\n   ],\r\n   \"Preferences\":[\r\n      {\r\n         \"Tag\":\"\",\r\n         \"TagId\":\"\",\r\n         \"WebsiteId\":\"\"\r\n      },\r\n      {\r\n         \"Tag\":\"\",\r\n         \"TagId\":\"\",\r\n         \"WebsiteId\":\"\"\r\n      }\r\n   ],\r\n   \r\n    \"Website\": {\r\n       \"Id\": \"123\",\r\n\t   \"Language\": \"Mexican\",\r\n\t   \"Country\":\"Mexico\"\r\n\t}\r\n  \r\n}"
+				},
+				"url": {
+					"raw": "https://boomidev.merckgroup.com/ws/rest/ecoevo/v1/akamairegistration/",
+					"protocol": "https",
+					"host": [
+						"boomidev",
+						"merckgroup",
+						"com"
+					],
+					"path": [
+						"ws",
+						"rest",
+						"ecoevo",
+						"v1",
+						"akamairegistration",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
